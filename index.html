@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>28.11</title>
+</head>
+<body>
+<script>
+
+let a=["Можно ли плакать под водой?","У пингвинов есть колени?","Коала - медведь?","Вода замерзает при 0 градусах по Фаренгейту?","Электрический ток всегда движется от плюса к минусу?"]
+let b=["да","да","нет","нет","да"];
+let count = 0;
+for (let i = 0; i < a.length; i++) {
+           let answer = prompt(a[i]);
+              if (answer.toLowerCase() === b[i]) {
+                 count++;
+             }
+            }
+    document.write(("Правильные ответы: /n" + count ));
+
+
+
+    let name=prompt("Input your name: ");
+    let can= /^[a-zA-Zа-яА-Я\s.]+$/;
+
+    if(can.test(name)){
+        document.write("Welcome!")
+    }
+    else{
+        document.write("You've put wrong symbols.Please, try again.")
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
